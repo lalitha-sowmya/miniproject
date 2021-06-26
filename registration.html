@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Signup for Tetrad</title>
+    <style>
+      body {
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .split {
+        height: 100%;
+        width: 50%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+
+      .left {
+        left: 0;
+      }
+
+      .right {
+        right: 0;
+      }
+      .centered {
+        color: antiquewhite;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      div.main {
+        color: antiquewhite;
+
+        font-size: xx-large;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      div.main1 {
+        color: antiquewhite;
+        font-size: xx-large;
+        margin-left: 1000px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body background="regbgd.jpg">
+    <div class="split right">
+      <div class="centered">
+        <form name="SignIn" required method="POST" action="registration.php">
+          <label for="Email">Email:</label><br />
+          <p><input type="email" name="email" required id="Email" /></p>
+          <label for="name">Full Name:</label><br />
+          <p><input type="text" name="name" required id="Name" /></p>
+          <label for="username">Username:</label>
+          <p><input type="text" name="username" required id="username" /></p>
+          <label for="Password">Password:</label>
+          <p><input type="password" name="password" required id="Password" /></p>
+          <label for="Password">Confirm Password:</label>
+          <p><input type="password" name="confirmpassword" required id="Password" /></p>
+          <label for="contact number">Mobile number:</label><br />
+          <p><input type="phone" name="contactnumber" required id="Mobile" /></p>
+          <label for="city">City:</label><br />
+          <select name="city" required>
+            <option value="Bhimavaram">Bhimavaram</option>
+            <option value="Rajahmundy">Rajahmundy</option>
+            <option value="Vijayawada">Vijayawada</option>
+            <option value="Visakapatanam">Visakapatanam</option>
+            <option value="Palakol">Palakol</option>
+            <option value="Eluru">Eluru</option></select
+          ><br />
+          <br /><input type="submit" value="Sign Up" />
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="split left">
+      <div class="centered">
+        <div class="main">
+          <p style="font-family: Georgia, 'Times New Roman', Times, serif">
+            Don't have an account??
+          </p>
+          <header>
+            <h1>
+              Signup to make your moments lively with<span style="color: gold">
+                TETRAD</span
+              >
+            </h1>
+          </header>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
